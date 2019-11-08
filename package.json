@@ -1,0 +1,55 @@
+{
+  "name": "@metamodern/design-system",
+  "version": "0.0.0",
+  "description": "An opinionated TailwindCSS configuration inspired by some modernist design theories",
+  "author": "Daniel C. Narey <os@metamodern.design>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metamodern-design/design-system"
+  },
+  "type": "module",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "del dist/*",
+    "build": "rollup -c",
+    "lint": "eslint --fix index.js src",
+    "release": "np",
+    "sync": "git pull && git add . && git commit -m 'automated sync' && git push",
+    "test": "npm run lint && npm run build && ava",
+    "update": "updtr"
+  },
+  "dependencies": {
+    "@arr/reduce": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "^2.3.0",
+    "del-cli": "^3.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-ava": "^9.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-types": "^1.0.2",
+    "esm": "^3.2.25",
+    "np": "^5.0.3",
+    "rollup": "^1.26.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "updtr": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  }
+}
