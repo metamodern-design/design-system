@@ -6,61 +6,33 @@ import main from '../dist/main';
 const run = (name, bundle) => {
   const defaultSystem = bundle();
   
-  test(`dist/${name}: colors`, (t) => {
-    t.is(
-      defaultSystem.colors.get('h45-s70-l27'),
-      'hsl(45,70%,27%)',
+  test(`dist/${name}: outer keys were generated`, (t) => {
+    t.deepEqual(
+      Object.keys(defaultSystem).sort(),
+      ['theme', 'variants'].sort(),
     );
-    t.is(
-      defaultSystem.colors.get('h90-s10-l52'),
-      'hsl(90,10%,52%)',
-    );
-    t.is(
-      defaultSystem.colors.get('h225-s40-l67'),
-      'hsl(225,40%,67%)',
-    );
-  });
+  };
   
-  test(`dist/${name}: grays`, (t) => {
-    t.is(
-      defaultSystem.grays.get('gray-12'),
-      'hsl(0,0%,12%)',
+  test(`dist/${name}: theme keys were generated`, (t) => {
+    t.deepEqual(
+      Object.keys(defaultSystem.theme).sort(),
+      ['screens', 'spacing', 'columnSpacing', 'relativeSpacing', 'width', 'height', 'minWidth', 'minHeight', 'maxWidth', 'maxHeight', 'padding', 'colors', 'borderColor', 'placeholderColor', 'fontSize', 'lineHeight', 'extend', 'borderRadius', 'borderWidth'].sort(),
     );
-    t.is(
-      defaultSystem.grays.get('gray-57'),
-      'hsl(0,0%,57%)',
-    );
-    t.is(
-      defaultSystem.grays.get('gray-87'),
-      'hsl(0,0%,87%)',
-    );
-  });
+  };
   
-  test(`dist/${name}: lsh`, (t) => {
-    t.is(
-      defaultSystem.lsh(83)(66)(11),
-      'hsl(11,66%,83%)',
-    );  
-  });
+  test(`dist/${name}: theme.extend keys were generated`, (t) => {
+    t.deepEqual(
+      Object.keys(defaultSystem.theme.extend).sort(),
+      ['fontWeight', 'fontFamily'].sort(),
+    );
+  };
 
-  test(`dist/${name}: theme`, (t) => {
-    t.is(
-      defaultSystem.theme['h30-s55-l62'],
-      'hsl(30,55%,62%)',
+  test(`dist/${name}: variants keys were generated`, (t) => {
+    t.deepEqual(
+      Object.keys(defaultSystem.variants).sort(),
+      ['accessibility', 'alignContent', 'alignItems', 'alignSelf', 'appearance', 'backgroundAttachment', 'backgroundColor', 'backgroundPosition', 'backgroundRepeat', 'backgroundSize',  'borderCollapse', 'borderColor', 'borderRadius',  'borderStyle',  'borderWidth', 'boxShadow', 'cursor', 'display', 'fill',  'flex', 'flexDirection', 'flexGrow', 'flexShrink', 'flexWrap', 'float', 'fontFamily', 'fontSize', 'fontSmoothing', 'fontStyle', 'fontWeight', 'height',  'inset',  'justifyContent', 'letterSpacing', 'lineHeight', 'listStylePosition', 'listStyleType', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'objectFit', 'objectPosition', 'opacity', 'order', 'outline', 'overflow', 'padding', 'placeholderColor', 'pointerEvents', 'position',  'resize', 'stroke', 'tableLayout', 'textAlign',  'textColor', 'textDecoration',  'textTransform', 'userSelect', 'verticalAlign', 'visibility', 'whitespace', 'width', 'wordBreak', 'zIndex'].sort(),
     );
-    t.is(
-      defaultSystem.theme['h255-s25-l12'],
-      'hsl(255,25%,12%)',
-    );
-    t.is(
-      defaultSystem.theme['h315-s85-l77'],
-      'hsl(315,85%,77%)',
-    );
-    t.is(
-      defaultSystem.theme['gray-32'],
-      'hsl(0,0%,32%)',
-    );
-  });
+  };
 };
 
 
