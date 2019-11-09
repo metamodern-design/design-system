@@ -52,8 +52,10 @@
     "tailwind",
     "tailwindcss",
     "configuration",
+    "config",
+    "design system",
     "design",
-    "system",
+    "system"
   ],
   "ava": {
     "require": [
