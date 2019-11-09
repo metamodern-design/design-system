@@ -10,7 +10,7 @@ const borderParams = ({
   borderRadius: (t) => ({
     default: `${defaultBorderRadius}px`,
     ...t('spacing'),
-  })
+  }),
   borderWidth: reduce(
     range(1, maxBorderWidth, 1),
     (a, k) => ({ ...a, [k]: `${k}px` }),

@@ -57,11 +57,11 @@ const relativeSizes = new Map([
 ]);
 
 
-const spacing = (options = {}) => {
+const spacing = (options = {}) => ({
   baseUnits: baseUnits(options),
   columnUnits: columnUnits(options),
   relativeSizes: relativeSizes,
-};
+});
 
 
 export default spacing;

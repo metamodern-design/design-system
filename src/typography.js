@@ -48,9 +48,9 @@ const leadings = ({
 } = {}) => reduce(
   fontSizeNames,
   (a, k, i) => {
-    a.set(`${k}-narrow`, `${fontSizes[i + 1] / u}rem`),
-    a.set(k, `${fontSizes[i + 2] / u}rem`),
-    a.set(`${k}-wide`, `${fontSizes[i + 3] / u}rem`),
+    a.set(`${k}-narrow`, `${fontSizes[i + 1] / u}rem`);
+    a.set(k, `${fontSizes[i + 2] / u}rem`);
+    a.set(`${k}-wide`, `${fontSizes[i + 3] / u}rem`);
     return a;
   },
   new Map(),

@@ -5,8 +5,8 @@ import spacing from './spacing';
 
 const sizes = (t) => ({
   ...t('spacing'),
-  ...t('columnSpacing');
-  ...t('relativeSpacing');
+  ...t('columnSpacing'),
+  ...t('relativeSpacing'),
 });
   
 
