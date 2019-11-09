@@ -8,7 +8,7 @@ const sizes = (t) => ({
   ...t('columnSpacing'),
   ...t('relativeSpacing'),
 });
-  
+
 
 const layoutParams = (options = {}) => ({
   screens: mapToObject(screens(options)),

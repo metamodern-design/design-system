@@ -1,7 +1,7 @@
 import reduce from '@arr/reduce';
 import range from './range';
 
-    
+
 const baseUnits = ({
   u = 17,
   b = 17,
@@ -14,13 +14,13 @@ const baseUnits = ({
     (a, k) => a.set(`${k}b`, rems(k)),
     new Map(),
   );
-  
+
   mp.set('0', '0');
   mp.set('quarter-b', rems(0.25));
   mp.set('half-b', rems(0.5));
   mp.set('one-and-half-b', rems(1.5));
   mp.set('two-and-half-b', rems(2.5));
-  
+
   return mp;
 };
 
@@ -60,7 +60,7 @@ const relativeSizes = new Map([
 const spacing = (options = {}) => ({
   baseUnits: baseUnits(options),
   columnUnits: columnUnits(options),
-  relativeSizes: relativeSizes,
+  relativeSizes,
 });
 
 
