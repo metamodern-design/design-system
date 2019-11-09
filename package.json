@@ -24,7 +24,8 @@
     "update": "updtr"
   },
   "dependencies": {
-    "@arr/reduce": "^1.0.1"
+    "@arr/reduce": "^1.0.1",
+    "@metamodern/color-system": "^0.1.0"
   },
   "devDependencies": {
     "ava": "^2.3.0",
