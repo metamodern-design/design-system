@@ -13,9 +13,9 @@ const tailwindcss = require('tailwindcss');
 
 module.exports = {
   plugins: [
-    // ...syntax-parsing plugins (postcss-import) go before...
+    // syntax-parsing plugins (postcss-import) go before
     tailwindcss(designSystem()),
-    // ...postprocessing plugins (autoprefixer) go after...
+    // postprocessing plugins (autoprefixer) go after
   ],
 };
 
