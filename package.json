@@ -48,6 +48,13 @@
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "configuration",
+    "design",
+    "system",
+  ],
   "ava": {
     "require": [
       "esm"
