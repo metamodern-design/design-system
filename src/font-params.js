@@ -1,3 +1,4 @@
+import mapToObject from './map-to-object';
 import typography from './typography';
 
 
@@ -51,8 +52,8 @@ const fontFamilies = (settings = {}) => ({
 
 
 const fontParams = (options = {}) => ({
-  fontSize: typography(options).sizes,
-  lineHeight: typography(options).leadings,
+  fontSize: mapToObject(typography(options).sizes),
+  lineHeight: mapToObject(typography(options).leadings),
   extend: {
     fontWeight: { regular: 400 },
     fontFamily: fontFamilies(options.fontFamilies),
