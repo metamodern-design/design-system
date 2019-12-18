@@ -16,7 +16,7 @@ const run = (name, bundle) => {
   test(`dist/${name}: theme keys were generated`, (t) => {
     t.deepEqual(
       Object.keys(defaultSystem.theme).sort(),
-      ['screens', 'spacing', 'columnSpacing', 'relativeSpacing', 'width', 'height', 'minWidth', 'minHeight', 'maxWidth', 'maxHeight', 'padding', 'colors', 'borderColor', 'placeholderColor', 'fontSize', 'lineHeight', 'extend', 'borderRadius', 'borderWidth'].sort(),
+      ['screens', 'spacing', 'columnSpacing', 'relativeSpacing', 'width', 'height', 'minWidth', 'minHeight', 'maxWidth', 'maxHeight', 'padding', 'colors', 'backgroundColor', 'borderColor', 'textColor', 'placeholderColor', 'fontSize', 'lineHeight', 'extend', 'borderRadius', 'borderWidth'].sort(),
     );
   });
   
