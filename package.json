@@ -9,7 +9,7 @@
     "url": "https://github.com/metamodern-design/design-system"
   },
   "type": "module",
-  "main": "dist/main.js",
+  "main": "dist/main.cjs",
   "module": "dist/module.js",
   "files": [
     "dist"
