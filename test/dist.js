@@ -1,5 +1,4 @@
 import test from 'ava';
-import module from '../dist/module';
 import main from '../dist/main';
 
 
@@ -36,5 +35,4 @@ const run = (name, bundle) => {
 };
 
 
-run('module', module);
 run('main', main);
