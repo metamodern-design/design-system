@@ -3,6 +3,7 @@ import typography from './typography';
 
 
 const sans = {
+  asap: ['Asap', 'sans-serif'],
   barlow: ['Barlow', 'sans-serif'],
   exo: ['"Exo 2"', 'sans-serif'],
   franklin: ['"Libre Franklin"', 'sans-serif'],
@@ -15,6 +16,7 @@ const sans = {
 
 
 const condensed = {
+  'asap-condensed': ['"Asap Condensed"', 'sans-serif'],
   'barlow-condensed': ['"Barlow Condensed"', 'sans-serif'],
   'barlow-semi': ['"Barlow Semi Condensed"', 'sans-serif'],
   'exo-condensed': ['"Exo Condensed"', 'sans-serif'],

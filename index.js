@@ -6,6 +6,7 @@ import variants from './src/variants';
 
 
 const designSystem = (options = {}) => ({
+  separator: '_',
   theme: {
     ...layoutParams(options),
     ...colorParams(options),
