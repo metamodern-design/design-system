@@ -8,7 +8,7 @@ const run = (name, bundle) => {
   test(`dist/${name}: outer keys were generated`, (t) => {
     t.deepEqual(
       Object.keys(defaultSystem).sort(),
-      ['theme', 'variants'].sort(),
+      ['separator', 'theme', 'variants'].sort(),
     );
   });
   
