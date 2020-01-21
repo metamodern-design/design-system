@@ -17,6 +17,7 @@ rules:
   no-console: off
   types/assign-type: error
   types/array-type: error
+  import/extensions: off
   import/no-extraneous-dependencies:
     - error
     - devDependencies: true
