@@ -1,6 +1,6 @@
 {
   "name": "@metamodern/design-system",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "A TailwindCSS configuration informed by modernist design theory",
   "author": "Daniel C. Narey <os@metamodern.design>",
   "license": "ISC",
