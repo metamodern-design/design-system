@@ -1,6 +1,6 @@
-import mapToObject from './map-to-object';
-import screens from './screens';
-import spacing from './spacing';
+import mapToObject from './map-to-object.js';
+import screens from './screens.js';
+import spacing from './spacing.js';
 
 
 const sizes = (t) => ({

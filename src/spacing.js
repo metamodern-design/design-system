@@ -1,5 +1,5 @@
 import reduce from '@arr/reduce';
-import range from './range';
+import range from './range.js';
 
 
 const baseUnits = ({

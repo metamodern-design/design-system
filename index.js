@@ -1,8 +1,8 @@
-import borderParams from './src/border-params';
-import colorParams from './src/color-params';
-import fontParams from './src/font-params';
-import layoutParams from './src/layout-params';
-import variants from './src/variants';
+import borderParams from './src/border-params.js';
+import colorParams from './src/color-params.js';
+import fontParams from './src/font-params.js';
+import layoutParams from './src/layout-params.js';
+import variants from './src/variants.js';
 
 
 const designSystem = (options = {}) => ({

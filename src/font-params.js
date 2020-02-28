@@ -1,5 +1,5 @@
-import mapToObject from './map-to-object';
-import typography from './typography';
+import mapToObject from './map-to-object.js';
+import typography from './typography.js';
 
 
 const sans = {
