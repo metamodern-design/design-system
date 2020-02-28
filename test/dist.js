@@ -1,5 +1,5 @@
 import test from 'ava';
-import module from '../dist/module.js';
+import esm from '../dist/esm.js';
 
 
 const run = (name, bundle) => {
@@ -35,4 +35,4 @@ const run = (name, bundle) => {
 };
 
 
-run('module', module);
+run('esm', esm);
