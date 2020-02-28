@@ -1,5 +1,5 @@
 import test from 'ava';
-import main from '../dist/main.cjs';
+import module from '../dist/module.js';
 
 
 const run = (name, bundle) => {
@@ -35,4 +35,4 @@ const run = (name, bundle) => {
 };
 
 
-run('main', main);
+run('module', module);
