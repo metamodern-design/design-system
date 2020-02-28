@@ -9,14 +9,16 @@
     "url": "https://github.com/metamodern-design/design-system"
   },
   "type": "module",
-  "main": "dist/main.cjs",
-  "module": "dist/module.js",
+  "main": "./dist/main.js",
+  "module": "./dist/module.js",
   "exports": {
-    "import": "dist/module.js",
-    "require": "dist/main.cjs"
+    ".": {
+      "require": "./dist/main.js",
+      "default": "./dist/module.js"
+    }
   },
   "files": [
-    "dist"
+    "./dist"
   ],
   "scripts": {
     "prebuild": "del dist/*",
@@ -29,7 +31,7 @@
   },
   "dependencies": {
     "@arr/reduce": "^1.0.1",
-    "@metamodern/color-system": "^0.3.2"
+    "@metamodern/color-system": "^0.4.0"
   },
   "devDependencies": {
     "ava": "^3.4.0",
