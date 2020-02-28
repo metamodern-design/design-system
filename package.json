@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@arr/reduce": "^1.0.1",
-    "@metamodern/color-system": "^0.4.0"
+    "@metamodern/color-system": "^0.5.0"
   },
   "devDependencies": {
     "ava": "^3.4.0",
