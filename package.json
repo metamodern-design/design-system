@@ -11,6 +11,10 @@
   "type": "module",
   "main": "dist/main.cjs",
   "module": "dist/module.js",
+  "exports": {
+    "import": "dist/module.js",
+    "require": "dist/main.cjs"
+  },
   "files": [
     "dist"
   ],
@@ -25,17 +29,16 @@
   },
   "dependencies": {
     "@arr/reduce": "^1.0.1",
-    "@metamodern/color-system": "^0.2.2"
+    "@metamodern/color-system": "^0.3.2"
   },
   "devDependencies": {
-    "ava": "^2.4.0",
+    "ava": "^3.4.0",
     "del-cli": "^3.0.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-ava": "^9.0.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-types": "^1.0.2",
-    "esm": "^3.2.25",
     "np": "^5.2.1",
     "rollup": "^1.29.1",
     "rollup-plugin-commonjs": "^10.1.0",
@@ -58,8 +61,8 @@
     "system"
   ],
   "ava": {
-    "require": [
-      "esm"
+    "nodeArguments": [
+      "--experimental-modules"
     ]
   }
 }
