@@ -1,4 +1,4 @@
-import colorSystem from '@metamodern/color-system/esm';
+import colorSystem from '@metamodern/color-system';
 
 
 const colorParams = (options = {}) => ({
