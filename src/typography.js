@@ -19,16 +19,29 @@ const defaultPxSizes = [
   13,
   17,
   21,
-  27.5,
+  25.5,
   34,
-  44.5,
-  55,
-  72,
-  89,
-  116.5,
-  144,
-  188.5,
-  233,
+  42.5,
+  51,
+  68,
+  85,
+  102,
+];
+
+
+const defaultPxLeadings = [
+  17,
+  21.25,
+  25.5,
+  34,
+  42.5,
+  51,
+  68,
+  85,
+  102,
+  136,
+  170,
+  204,
 ];
 
 
@@ -44,13 +57,13 @@ const sizes = ({
 
 const leadings = ({
   u = 17,
-  fontSizes = defaultPxSizes,
+  lineHeights = defaultPxLeadings,
 } = {}) => reduce(
   fontSizeNames,
   (a, k, i) => {
-    a.set(`${k}-narrow`, `${fontSizes[i + 1] / u}rem`);
-    a.set(k, `${fontSizes[i + 2] / u}rem`);
-    a.set(`${k}-wide`, `${fontSizes[i + 3] / u}rem`);
+    a.set(`${k}-narrow`, `${lineHeights[i] / u}rem`);
+    a.set(k, `${lineHeights[i + 1] / u}rem`);
+    a.set(`${k}-wide`, `${lineHeights[i + 2] / u}rem`);
     return a;
   },
   new Map(),
