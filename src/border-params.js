@@ -3,7 +3,7 @@ import range from './range.js';
 
 
 const borderParams = ({
-  defaultBorderRadius = 4.25,
+  defaultBorderRadius = 4,
   defaultBorderWidth = 1,
   maxBorderWidth = 8,
 } = {}) => ({

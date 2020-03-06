@@ -2,7 +2,7 @@ import reduce from '@arr/reduce';
 
 
 const screens = ({
-  b = 17,
+  b = 16,
   c = 4,
   breakpoints = [11, 17],
 } = {}) => reduce(

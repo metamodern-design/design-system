@@ -3,8 +3,8 @@ import range from './range.js';
 
 
 const baseUnits = ({
-  u = 17,
-  b = 17,
+  u = 16,
+  b = 16,
   bMax = 8,
 } = {}) => {
   const rems = (n) => `${(n * b) / u}rem`;
@@ -26,8 +26,8 @@ const baseUnits = ({
 
 
 const columnUnits = ({
-  u = 17,
-  b = 17,
+  u = 16,
+  b = 16,
   c = 4,
   cMax = 20,
 } = {}) => {
