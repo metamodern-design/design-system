@@ -13,7 +13,7 @@ const borderParams = ({
     ...t('spacing'),
   }),
   borderWidth: reduce(
-    range(1, maxBorderWidth, 1),
+    range(0, maxBorderWidth, 1),
     (a, k) => ({ ...a, [k]: `${k}px` }),
     { default: `${defaultBorderWidth}px` },
   ),
