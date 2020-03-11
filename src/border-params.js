@@ -9,6 +9,7 @@ const borderParams = ({
 } = {}) => ({
   borderRadius: (t) => ({
     default: `${defaultBorderRadius}px`,
+    none: '0',
     full: '9999px',
     ...t('spacing'),
   }),

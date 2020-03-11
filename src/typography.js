@@ -4,7 +4,6 @@ import reduce from '@arr/reduce';
 const fontSizeNames = [
   'xs',
   'sm',
-  'md',
   'base',
   'lg',
   'xl',
@@ -19,7 +18,6 @@ const fontSizeNames = [
 const defaultPxSizes = [
   14,
   16,
-  18,
   20,
   24,
   32,
@@ -32,10 +30,9 @@ const defaultPxSizes = [
 
 
 const defaultPxLeadings = [
-  18,
+  16,
   20,
   24,
-  28,
   32,
   40,
   48,
