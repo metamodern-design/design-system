@@ -41,9 +41,9 @@ const columnUnits = ({
     new Map(),
   );
 
-  mp.set('one-and-half-c', rems(6));
-  mp.set('two-and-half-c', rems(10));
-  mp.set('three-and-half-c', rems(14));
+  mp.set('one-and-half-c', rems(1.5));
+  mp.set('two-and-half-c', rems(2.5));
+  mp.set('three-and-half-c', rems(3.5));
 
   return mp;
 };
