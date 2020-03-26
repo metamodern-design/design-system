@@ -18,7 +18,7 @@ const baseUnits = ({
   mp.set('0', '0');
   mp.set('quarter-b', rems(0.25));
   mp.set('half-b', rems(0.5));
-  mp.set('three-quarter-b', rems(.75));
+  mp.set('three-quarter-b', rems(0.75));
   mp.set('one-and-quarter-b', rems(1.25));
   mp.set('one-and-half-b', rems(1.5));
   mp.set('two-and-half-b', rems(2.5));
@@ -40,11 +40,11 @@ const columnUnits = ({
     (a, k) => a.set(`${k}c`, rems(k)),
     new Map(),
   );
-  
+
   mp.set('one-and-half-c', rems(6));
   mp.set('two-and-half-c', rems(10));
   mp.set('three-and-half-c', rems(14));
-  
+
   return mp;
 };
 
