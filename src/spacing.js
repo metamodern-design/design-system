@@ -1,4 +1,3 @@
-import reduce from '@arr/reduce';
 import range from './range.js';
 
 
@@ -9,10 +8,10 @@ const baseUnits = ({
 } = {}) => {
   const rems = (n) => `${(n * b) / u}rem`;
 
-  const mp = reduce(
-    range(1, bMax, 1),
-    (a, k) => a.set(`${k}b`, rems(k)),
-    new Map(),
+  const mp = new Map();
+  
+  range(1, bMax, 1).forEach(
+    (k) => { mp.set(`${k}b`, rems(k)); },
   );
 
   mp.set('0', '0');
@@ -35,10 +34,10 @@ const columnUnits = ({
 } = {}) => {
   const rems = (n) => `${(n * c * b) / u}rem`;
 
-  const mp = reduce(
-    range(1, cMax, 1),
-    (a, k) => a.set(`${k}c`, rems(k)),
-    new Map(),
+  const mp = new Map();
+
+  range(1, cMax, 1).forEach(
+    (k) => { mp.set(`${k}c`, rems(k)); },
   );
 
   mp.set('one-and-half-c', rems(1.5));

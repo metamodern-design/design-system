@@ -1,11 +1,12 @@
-import reduce from '@arr/reduce';
+const mapToObject = (mp) => {
+  const out = {};
 
+  mp.forEach(
+    (value, key) => { out[key] = value; },
+  );
 
-const mapToObject = (mp) => reduce(
-  [...mp.entries()],
-  (a, [key, value]) => ({ ...a, [key]: value }),
-  {},
-);
+  return out;
+};
 
 
 export default mapToObject;

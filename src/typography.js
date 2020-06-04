@@ -1,6 +1,3 @@
-import reduce from '@arr/reduce';
-
-
 const fontSizeNames = [
   'xs',
   'sm',
@@ -48,26 +45,33 @@ const defaultPxLeadings = [
 const sizes = ({
   u = 16,
   fontSizes = defaultPxSizes,
-} = {}) => reduce(
-  fontSizeNames,
-  (a, k, i) => a.set(k, `${fontSizes[i] / u}rem`),
-  new Map(),
-);
+} = {}) => {
+  const mp = new Map();
+  
+  fontSizeNames.forEach(
+    (k) => { mp.set(k, `${fontSizes[i] / u}rem`); },
+  );
+  
+  return mp;
+};
 
 
 const leadings = ({
   u = 16,
   lineHeights = defaultPxLeadings,
-} = {}) => reduce(
-  fontSizeNames,
-  (a, k, i) => {
-    a.set(`${k}-narrow`, `${lineHeights[i] / u}rem`);
-    a.set(k, `${lineHeights[i + 1] / u}rem`);
-    a.set(`${k}-wide`, `${lineHeights[i + 2] / u}rem`);
-    return a;
-  },
-  new Map(),
-);
+} = {}) => {
+  const mp = new Map();
+  
+  fontSizeNames.forEach(
+    (k, i) => {
+      mp.set(`${k}-narrow`, `${lineHeights[i] / u}rem`);
+      mp.set(k, `${lineHeights[i + 1] / u}rem`);
+      mp.set(`${k}-wide`, `${lineHeights[i + 2] / u}rem`);
+    },
+  );
+  
+  return mp;
+};
 
 
 const typography = (options = {}) => ({
