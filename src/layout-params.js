@@ -19,7 +19,7 @@ const layoutParams = (options = {}) => ({
   height: (t) => ({ auto: 'auto', ...sizes(t), screen: '100vh' }),
   minWidth: sizes,
   minHeight: (t) => ({ ...sizes(t), screen: '100vh' }),
-  maxWidth: (t) => ({ ...sizes(t), screen: '100vw' }),
+  maxWidth: (t) => ({ none: 'none', ...sizes(t), screen: '100vw' }),
   maxHeight: sizes,
   padding: sizes,
 });
