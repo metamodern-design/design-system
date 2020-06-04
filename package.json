@@ -27,9 +27,9 @@
     "update": "updtr"
   },
   "dependencies": {
-    "@metamodern/color-system": "^1.1.0"
   },
   "devDependencies": {
+    "@metamodern/color-system": "^1.1.0",
     "ava": "^3.8.2",
     "del-cli": "^3.0.1",
     "eslint": "^7.1.0",
