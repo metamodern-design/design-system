@@ -41,12 +41,12 @@ const sizes = ({
         `${textHeights[i] / u}rem`,
         `${textHeights[i + 1] / u}rem`,
       ]);
-      
+
       mp.set(k, [
         `${textHeights[i] / u}rem`,
         `${textHeights[i + 2] / u}rem`,
       ]);
-      
+
       mp.set(`${k}-wide`, [
         `${textHeights[i] / u}rem`,
         `${textHeights[i + 3] / u}rem`,
@@ -67,7 +67,7 @@ const leadings = ({
   fontSizeNames.forEach(
     (k, i) => { mp.set(k, `${textHeights[i] / u}rem`); },
   );
-  
+
   mp.set('none', '1');
   mp.set('quarter', '1.25');
   mp.set('three-eighths', '1.375');
