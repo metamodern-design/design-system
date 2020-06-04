@@ -7,7 +7,7 @@ const defaultSystem = designSystem();
 test(`dist: outer keys were generated`, (t) => {
   t.deepEqual(
     Object.keys(defaultSystem).sort(),
-    ['separator', 'theme', 'variants'].sort(),
+    ['theme', 'variants'].sort(),
   );
 });
 

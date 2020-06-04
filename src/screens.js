@@ -4,11 +4,11 @@ const screens = ({
   breakpoints = [11, 17],
 } = {}) => {
   const mp = new Map();
-  
+
   breakpoints.forEach(
     (k) => { mp.set(`c${k}`, `${k * c * b}px`); },
   );
-  
+
   return mp;
 };
 

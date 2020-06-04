@@ -9,7 +9,7 @@ const baseUnits = ({
   const rems = (n) => `${(n * b) / u}rem`;
 
   const mp = new Map();
-  
+
   range(1, bMax, 1).forEach(
     (k) => { mp.set(`${k}b`, rems(k)); },
   );

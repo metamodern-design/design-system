@@ -47,11 +47,11 @@ const sizes = ({
   fontSizes = defaultPxSizes,
 } = {}) => {
   const mp = new Map();
-  
+
   fontSizeNames.forEach(
-    (k) => { mp.set(k, `${fontSizes[i] / u}rem`); },
+    (k, i) => { mp.set(k, `${fontSizes[i] / u}rem`); },
   );
-  
+
   return mp;
 };
 
@@ -61,7 +61,7 @@ const leadings = ({
   lineHeights = defaultPxLeadings,
 } = {}) => {
   const mp = new Map();
-  
+
   fontSizeNames.forEach(
     (k, i) => {
       mp.set(`${k}-narrow`, `${lineHeights[i] / u}rem`);
@@ -69,7 +69,7 @@ const leadings = ({
       mp.set(`${k}-wide`, `${lineHeights[i + 2] / u}rem`);
     },
   );
-  
+
   return mp;
 };
 
