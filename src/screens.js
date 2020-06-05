@@ -1,7 +1,7 @@
 const screens = ({
   b = 16,
   c = 4,
-  breakpoints = [11, 17],
+  breakpoints = [11, 17, 21],
 } = {}) => {
   const mp = new Map();
 
