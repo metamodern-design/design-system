@@ -28,7 +28,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@metamodern/color-system": "^1.1.0",
+    "@metamodern/color-system": "^1.1.1",
     "@rollup/plugin-node-resolve": "^8.0.0",
     "ava": "^3.8.2",
     "del-cli": "^3.0.1",
@@ -37,7 +37,7 @@
     "eslint-plugin-ava": "^10.3.0",
     "eslint-plugin-import": "^2.20.2",
     "np": "^5.2.1",
-    "rollup": "^2.13.0",
+    "rollup": "^2.13.1",
     "updtr": "^3.1.0"
   },
   "engines": {
