@@ -28,7 +28,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@metamodern/color-system": "^1.1.1",
+    "@metamodern/color-system": "^2.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
     "ava": "^3.8.2",
     "del-cli": "^3.0.1",
