@@ -8,5 +8,4 @@ const mapToObject = (mp) => {
   return out;
 };
 
-
 export default mapToObject;

@@ -11,7 +11,6 @@ const fontSizeNames = [
   '6xl',
 ];
 
-
 const defaultTextHeights = [
   14,
   16,
@@ -27,7 +26,6 @@ const defaultTextHeights = [
   160,
   192,
 ];
-
 
 const sizes = ({
   u = 16,
@@ -57,7 +55,6 @@ const sizes = ({
   return mp;
 };
 
-
 const leadings = ({
   u = 16,
   textHeights = defaultTextHeights,
@@ -78,11 +75,9 @@ const leadings = ({
   return mp;
 };
 
-
 const typography = (options = {}) => ({
   sizes: sizes(options),
   leadings: leadings(options),
 });
-
 
 export default typography;

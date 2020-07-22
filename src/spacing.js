@@ -1,6 +1,5 @@
 import range from './range.js';
 
-
 const baseUnits = ({
   u = 16,
   b = 16,
@@ -25,7 +24,6 @@ const baseUnits = ({
   return mp;
 };
 
-
 const columnUnits = ({
   u = 16,
   b = 16,
@@ -47,7 +45,6 @@ const columnUnits = ({
   return mp;
 };
 
-
 const relativeSizes = new Map([
   ['full', '100%'],
   ['half', '49.99%'],
@@ -61,12 +58,10 @@ const relativeSizes = new Map([
   ['four-fifths', '79.99%'],
 ]);
 
-
 const spacing = (options = {}) => ({
   baseUnits: baseUnits(options),
   columnUnits: columnUnits(options),
   relativeSizes,
 });
-
 
 export default spacing;

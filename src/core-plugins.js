@@ -6,5 +6,4 @@ const corePlugins = (settings = {}) => ({
   ...settings,
 });
 
-
 export default corePlugins;

@@ -2,13 +2,11 @@ import mapToObject from './map-to-object.js';
 import screens from './screens.js';
 import spacing from './spacing.js';
 
-
 const sizes = (t) => ({
   ...t('spacing'),
   ...t('columnSpacing'),
   ...t('relativeSpacing'),
 });
-
 
 const layoutParams = (options = {}) => ({
   screens: mapToObject(screens(options)),
@@ -23,6 +21,5 @@ const layoutParams = (options = {}) => ({
   maxHeight: sizes,
   padding: sizes,
 });
-
 
 export default layoutParams;

@@ -1,7 +1,6 @@
 import mapToObject from './map-to-object.js';
 import typography from './typography.js';
 
-
 const sans = {
   asap: ['Asap', 'sans-serif'],
   barlow: ['Barlow', 'sans-serif'],
@@ -15,14 +14,12 @@ const sans = {
   'source-sans-pro': ['"Source Sans Pro"', 'sans-serif'],
 };
 
-
 const condensed = {
   'asap-condensed': ['"Asap Condensed"', 'sans-serif'],
   'barlow-condensed': ['"Barlow Condensed"', 'sans-serif'],
   'barlow-semi-condensed': ['"Barlow Semi Condensed"', 'sans-serif'],
   'ibm-plex-sans-condensed': ['"IBM Plex Sans Condensed"', 'sans-serif'],
 };
-
 
 const serif = {
   'libre-baskerville': ['"Libre Baskerville"', 'serif'],
@@ -33,14 +30,12 @@ const serif = {
   'source-serif-pro': ['"Source Serif Pro"', 'serif'],
 };
 
-
 const mono = {
   'courier-prime': ['"Courier Prime"', 'monospace'],
   'cutive-mono': ['"Cutive Mono"', 'monospace'],
   'ibm-plex-mono': ['"IBM Plex Mono"', 'monospace'],
   'source-code-pro': ['"Source Code Pro"', 'monospace'],
 };
-
 
 const fontFamilies = (settings = {}) => ({
   ...sans,
@@ -50,7 +45,6 @@ const fontFamilies = (settings = {}) => ({
   ...settings,
 });
 
-
 const fontParams = (options = {}) => ({
   fontSize: mapToObject(typography(options).sizes),
   lineHeight: mapToObject(typography(options).leadings),
@@ -59,6 +53,5 @@ const fontParams = (options = {}) => ({
     fontFamily: fontFamilies(options.fontFamilies),
   },
 });
-
 
 export default fontParams;

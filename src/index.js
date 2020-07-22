@@ -5,7 +5,6 @@ import layoutParams from './layout-params.js';
 import variants from './variants.js';
 import corePlugins from './core-plugins.js';
 
-
 const designSystem = (options = {}) => ({
   theme: {
     ...layoutParams(options),
@@ -16,6 +15,5 @@ const designSystem = (options = {}) => ({
   variants: variants(options.variants),
   corePlugins: corePlugins(options.corePlugins),
 });
-
 
 export default designSystem;

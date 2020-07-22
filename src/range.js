@@ -3,5 +3,4 @@ const range = (start, stop, step) => Array.from(
   (_, i) => start + (i * step),
 );
 
-
 export default range;

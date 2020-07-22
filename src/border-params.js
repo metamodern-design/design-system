@@ -1,6 +1,5 @@
 import range from './range.js';
 
-
 const borderParams = ({
   defaultBorderRadius = 4,
   defaultBorderWidth = 1,
@@ -24,6 +23,5 @@ const borderParams = ({
     borderWidth,
   };
 };
-
 
 export default borderParams;

@@ -99,5 +99,4 @@ const variants = (settings = {}) => ({
   ...settings,
 });
 
-
 export default variants;

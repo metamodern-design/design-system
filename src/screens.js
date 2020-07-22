@@ -12,5 +12,4 @@ const screens = ({
   return mp;
 };
 
-
 export default screens;
